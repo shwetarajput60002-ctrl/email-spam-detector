@@ -1,20 +1,25 @@
 # 📧 Email Spam Detection System
 
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Flask](https://img.shields.io/badge/Framework-Flask-green)
+![ML](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+
+---
+
 ## 📌 Project Description
 
-This project is a **Machine Learning based Email Spam Detection System** developed using **Python and Flask**.
-It classifies email messages as **Spam or Not Spam** based on their content.
+The **Email Spam Detection System** is a Machine Learning-based web application that classifies email messages as **Spam** or **Not Spam**.
 
-The system uses a trained model along with a text vectorizer to analyze input messages and predict whether they are spam.
+This project is built using **Flask** for the web interface and **Scikit-learn** for model training and prediction. It helps in filtering unwanted emails efficiently.
 
 ---
 
 ## 🚀 Features
 
-* Detects spam emails in real-time
-* Simple and user-friendly web interface
-* Fast prediction using Machine Learning
-* Built using Flask framework
+* 🔍 Detect spam emails instantly
+* 🤖 Machine Learning-based prediction
+* 🌐 User-friendly web interface
+* ⚡ Fast and efficient performance
 
 ---
 
@@ -23,58 +28,91 @@ The system uses a trained model along with a text vectorizer to analyze input me
 * Python
 * Flask
 * Scikit-learn
-* Pandas & NumPy
+* Pandas
+* NumPy
 * HTML & CSS
 
 ---
 
-## 📁 Project Files Included
+## 📁 Project Structure
 
-* `app.py` – Main Flask application
-* `model.pkl` – Trained machine learning model
-* `vectorizer.pkl` – Text vectorizer
-* `requirements.txt` – Dependencies
-* `templates/` – HTML files
-* `static/` – CSS files
+```
+email-spam-detector/
+│
+├── app.py
+├── model.pkl
+├── vectorizer.pkl
+├── requirements.txt
+├── Dockerfile
+├── README.md
+│
+├── templates/
+│     └── index.html
+│
+└── static/
+      └── style.css
+```
 
 ---
 
-## 🔗 GitHub Repository Link
+## ⚙️ Installation & Setup
 
-👉 https://github.com/your-username/email-spam-detector
+### Step 1: Clone the repository
+
+```
+https://github.com/shwetarajput60002-ctrl/email-spam-detector
+cd email-spam-detector
+```
+
+### Step 2: Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### Step 3: Run the application
+
+```
+python app.py
+```
+
+### Step 4: Open in browser
+
+```
+http://127.0.0.1:7860
+```
 
 ---
 
-## 🌐 Deployment Link
+## 🧠 How It Works
+
+1. User enters email/message text
+2. Text is transformed using a vectorizer
+3. Machine Learning model predicts:
+
+   * **Spam ❌**
+   * **Not Spam ✅**
+
+---
+
+## 🌐 Live Demo
 
 👉 https://huggingface.co/spaces/Shwetarajput11/Email_SpamDetector
 
+## 👩‍💻 Author
+
+**Shweta**
 ---
 
-## ⚙️ How to Run the Project
+## 📌 Future Improvements
 
-1. Install dependencies:
-
-   ```
-   pip install -r requirements.txt
-   ```
-2. Run the application:
-
-   ```
-   python app.py
-   ```
-3. Open browser:
-
-   ```
-   http://127.0.0.1:7860
-   ```
+* Add email file upload feature
+* Improve model accuracy
+* Add probability score
+* Enhance UI design
 
 ---
 
-## 👩‍💻 Student Details
+## ⭐ Acknowledgement
 
-**Name:** Shweta
-
----
-
-
+This project is developed for academic purposes and demonstrates the use of Machine Learning in spam detection.
